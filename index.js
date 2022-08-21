@@ -6,7 +6,7 @@ const passphrase = uuidv4();
 const { privateKey, publicKey, revocationCertificate } = await openpgp.generateKey({
     type: 'ecc',
     curve: 'curve25519',
-    userIDs: [{ name: 'Test User', email: 'test@test.com' }],
+    userIDs: [{ name: 'Test User', email: 'test@example.com' }],
     passphrase,
     format: 'armored'
 });
